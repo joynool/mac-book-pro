@@ -52,7 +52,6 @@ document.getElementById('promo-apply').addEventListener('click', function ()
     if (promoCode.value == 'stevekaku') {
         let totalPrice = getValue('total-price', true);
         totalPrice = totalPrice - ((20 / 100) * totalPrice);
-        getValue('total-price', false).innerText = totalPrice;
         getValue('total', false).innerText = totalPrice;
         promoCode.value = '';
     }
